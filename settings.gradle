@@ -1,0 +1,6 @@
+rootProject.name = 'vertx-metrics'
+
+gradle.ext {
+  prometheusVersion = '1.10.4'
+  vertxVersion = '3.9.13' //change to 3.9.14 to reproduce the issue.
+}

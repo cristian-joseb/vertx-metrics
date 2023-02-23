@@ -1,0 +1,19 @@
+plugins {
+  id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation "io.vertx:vertx-core:${gradle.vertxVersion}"
+  implementation "io.vertx:vertx-web:${gradle.vertxVersion}"
+  implementation "io.vertx:vertx-micrometer-metrics:${gradle.vertxVersion}"
+
+  implementation "io.micrometer:micrometer-registry-prometheus:${gradle.prometheusVersion}"
+  implementation group: 'org.slf4j', name: 'slf4j-api', version: '2.0.6'
+}
